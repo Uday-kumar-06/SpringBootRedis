@@ -30,7 +30,7 @@ public class RedisConfig {
         //key serializer
         redisTemplate.setKeySerializer(new StringRedisSerializer());
 
-        // value serializer
+        // --> value serializer
         redisTemplate.setValueSerializer(RedisSerializer.json());
         return redisTemplate;
 
